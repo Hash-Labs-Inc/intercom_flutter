@@ -1,9 +1,9 @@
 PODS:
   - Flutter (1.0.0)
-  - Intercom (6.0.1)
-  - intercom_flutter (2.1.0):
+  - Intercom (8.1.0)
+  - intercom_flutter (2.3.2):
     - Flutter
-    - Intercom (~> 6.0.1)
+    - Intercom (~> 8.1.0)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
@@ -21,9 +21,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  Intercom: f63e30d10c658b4f5817f5693e5ee2fa070b5803
-  intercom_flutter: 3c324ba9a75060f15c5bfb7854a9bb0a3524cb65
+  Intercom: a6e31800c84278b883205b9473f32e98e6774f85
+  intercom_flutter: 045d5e435b070fa5d3d98bf739b644073401b258
 
-PODFILE CHECKSUM: 083258d7f5e80b42ea9bfee905fe93049bc04c64
+PODFILE CHECKSUM: fe0e1ee7f3d1f7d00b11b474b62dd62134535aea
 
-COCOAPODS: 1.9.0.beta.3
+COCOAPODS: 1.9.3
