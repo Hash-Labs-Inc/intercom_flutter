@@ -85,7 +85,16 @@ id unread;
         [Intercom presentHelpCenter];
         result(@"Presented help center");
     }
-    else if([@"updateUser" isEqualToString:call.method]) {
+    else if([@"displayArticle" isEqualToString:call.method]) {
+        NSString *articleId = call.arguments[@"articleId"];
+        [Intercom presentArticle:articleId];
+        result(@"Presented article");
+    }
+    else if([@"displayCarousel" isEqualToString:call.method]) {
+        NSString *carouselId = call.arguments[@"carouselId"];
+        [Intercom presentCarousel:carouselId];
+        result(@"Presented carousel");
+    } else if([@"updateUser" isEqualToString:call.method]) {
         ICMUserAttributes *attributes = [ICMUserAttributes new];
         NSString *email = call.arguments[@"email"];
         if(email != (id)[NSNull null]) {

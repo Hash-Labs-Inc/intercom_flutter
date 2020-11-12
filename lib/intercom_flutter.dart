@@ -112,6 +112,14 @@ class Intercom {
     return _channel.invokeMethod('displayHelpCenter');
   }
 
+  static Future<dynamic> displayArticle(String articleId) {
+    return _channel.invokeMethod('displayArticle', {'articleId': articleId});
+  }
+
+  static Future<dynamic> displayCarousel(String carouselId) {
+    return _channel.invokeMethod('displayCarousel', {'carouselId': carouselId});
+  }
+
   static Future<dynamic> logEvent(String name,
       [Map<String, dynamic> metaData]) {
     return _channel
