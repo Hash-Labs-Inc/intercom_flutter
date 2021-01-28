@@ -22,6 +22,7 @@ class SampleApp extends StatelessWidget {
         body: Center(
           child: FlatButton(
             onPressed: () {
+              Intercom.registerUnidentifiedUser();
               Intercom.displayMessenger();
             },
             child: Text('Show messenger'),
